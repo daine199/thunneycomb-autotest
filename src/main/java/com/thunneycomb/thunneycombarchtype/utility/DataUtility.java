@@ -22,6 +22,12 @@ public class DataUtility {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(DataUtility.class);
 
+
+    /**
+     * 获取json 中的数据，DataProvider基础方法
+     * @param filename
+     * @return
+     */
     public static Object[][] getData (String filename) {
 
         try {
