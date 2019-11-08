@@ -28,16 +28,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<!--只支持JUnit-->
+			<!--原生starter 只支持JUnit-->
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -47,10 +45,18 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!--fastjson 越来越多坑，也可以考虑不用该组件-->
+		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -88,13 +94,13 @@
 
 		</plugins>
 
-		<resources>
-			<resource>
-				<directory>${basedir}/src/</directory>
-			</resource>
+		<!--<resources>-->
+			<!--<resource>-->
+				<!--<directory>${basedir}/src/</directory>-->
+			<!--</resource>-->
 
 
-		</resources>
+		<!--</resources>-->
 	</build>
 
 	<profiles>

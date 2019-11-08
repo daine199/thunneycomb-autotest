@@ -1,7 +1,7 @@
 package com.thunneycomb.thunneycombarchtype.testsuite;
 
 import com.alibaba.fastjson.JSONObject;
-import com.thunneycomb.thunneycombarchtype.CaseBase;
+import com.thunneycomb.thunneycombarchtype.TestNGCaseBase;
 import com.thunneycomb.thunneycombarchtype.utility.DataUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,9 +16,9 @@ import org.testng.annotations.Test;
  * @since 2015
  **/
 
-public class TestNGTesterDemoTest extends CaseBase {
+public class SpringbootTesterTestNGDemoTest extends TestNGCaseBase {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(TestNGTesterDemoTest.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(SpringbootTesterTestNGDemoTest.class);
 
     @Test(dataProvider = "testDataProviderTest" )
     public void testNGDemoTest (String caseInfo, JSONObject req, JSONObject exp, String comment) {
