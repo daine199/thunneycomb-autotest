@@ -6,15 +6,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.BeforeMethod;
 
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
-//public class TestNGCaseBase {
-//
-//	@Test
-//	public void contextLoads() {
-//	}
-//
-//}
 
 @SpringBootTest(classes = ThunneycombArchtypeApplication.class)
 public class TestNGCaseBase extends AbstractTestNGSpringContextTests {

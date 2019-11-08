@@ -117,12 +117,14 @@
 			<build>
 				<resources>
 					<resource>
-						<directory>src/test/profiles/dev</directory>
-					</resource>
-					<resource>
 						<directory>src/main/profiles/dev</directory>
 					</resource>
 				</resources>
+				<testResources>
+					<testResource>
+						<directory>src/test/profiles/dev</directory>
+					</testResource>
+				</testResources>
 			</build>
 		</profile>
 		<profile>
@@ -136,12 +138,14 @@
 			<build>
 				<resources>
 					<resource>
-						<directory>src/test/profiles/test</directory>
-					</resource>
-					<resource>
 						<directory>src/main/profiles/test</directory>
 					</resource>
 				</resources>
+				<testResources>
+					<testResource>
+						<directory>src/test/profiles/test</directory>
+					</testResource>
+				</testResources>
 			</build>
 		</profile>
 	</profiles>
