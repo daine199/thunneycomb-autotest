@@ -1,4 +1,6 @@
 # Thunneycomb-Autotest
+主页：
+https://www.thunneycomb.com/wiki/learning_notes/springboot_testng/
 
 2019-11-08 Update by Daine.H
 1. 单纯的应用TestNG或JUnit，都可以完成mvn clean package时的执行。在单元测试上，单元测试mock上TestNG没有特别额外的价值。建议项目内单元测试尽量还是使用自带的JUnit。
