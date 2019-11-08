@@ -1,5 +1,6 @@
 package com.thunneycomb.thunneycombarchtype.sample;
 
+import com.thunneycomb.thunneycombarchtype.ThunneycombArchtypeApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+//@SpringBootTest(classes = ThunneycombArchtypeApplication.class)
 public class HomeControllerSmokeTest {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(HomeControllerSmokeTest.class);

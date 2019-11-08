@@ -68,7 +68,11 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-			<!--用于支持 maven spring-testng 集成测试驱动-->
+			<!-- 用于支持 maven spring-testng 集成测试驱动
+			1. 如果要做简单的单元测试，需要注释掉surefire插件，会有不小开销
+			2. surefire的关于单元测试的增强，springboot-test-starter完全可以满足
+			3. 所以如果不是集成测试和场景测试，可以直接注释掉这个插件。
+			-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
