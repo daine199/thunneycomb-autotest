@@ -2,6 +2,10 @@
 主页：
 https://www.thunneycomb.com/wiki/learning_notes/springboot_testng/
 
+2019-12-23 Update by Daine.H
+1. 增加GitHub 流水线，今后每次提交代码时会完成测试
+2. 升级fastjson 1.2.58 到1.2.62
+
 2019-11-08 Update by Daine.H
 通过本模板创建新项目：
 1. mvn clean install
